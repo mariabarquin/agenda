@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
+header {
+  padding: 40px;
+}
+main {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+.exhibition-card {
+  background: white;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+}
+.exhibition-card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.exhibition-card p {
+  margin: 4px 0;
+}
+
+button {
+  padding: 8px 14px;
+  margin-top: 16px;
+  margin-right: 8px;
+  border: 1px solid #111;
+  background: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #111;
+  color: white;
+}
+
+.exhibition-form {
+  display: grid;
+  gap: 12px;
+  max-width: 500px;
+  margin-top: 100px;
+}
+.exhibition-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header,
+  main {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
